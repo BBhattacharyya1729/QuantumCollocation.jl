@@ -16,6 +16,8 @@ using ExponentialAction
 using JLD2
 using TestItems
 
+export apply_piccolo_options!
+
 include("unitary_smooth_pulse_problem.jl")
 include("unitary_variational_problem.jl")
 include("unitary_minimum_time_problem.jl")
