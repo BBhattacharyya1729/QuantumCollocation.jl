@@ -162,7 +162,7 @@ function UnitaryVariationalProblem(
     # Optional Piccolo constraints and objectives
     apply_piccolo_options!(
         J, constraints, piccolo_options, traj, state_name, timestep_name;
-        state_leakage_indices=goal isa EmbeddedOperator ? get_leakage_indices(goal) : nothing
+        state_leakage_indices=goal isa EmbeddedOperator ? get_leakage_indices(goal) : nothing,
     )
 
     integrators = [
